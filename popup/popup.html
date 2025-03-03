@@ -1,0 +1,93 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Little Freak</title>
+        <link rel="stylesheet" href="popup.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="tab active" id="pet">
+            <div id="creature-box">
+                <img id="creature-img" draggable="false">
+            </div>
+            <div id="tag">
+                <h2 id="name"></h2>
+                <h3 id="level"></h3>
+                <div id="exp"></div>
+            </div>
+            <div id="health"></div>
+            <div id="focus">
+                <img id="focus-img" src="assets/sleep.png">
+            </div>
+            <div id="focus-timer">
+                <h1 id="focus-label"></h1>
+            </div>
+            <div id="shadow"></div>
+            <div id="info" class="gone">
+                <h3></h3>
+                <p></p>
+                <div id="info-ok">okey</div>
+            </div>
+        </div>
+
+        <div class="tab" id="tasks">
+            <div class="title">
+                <h1>Tasks</h1>
+            </div>
+            <div id="task-box">
+                <div id="enter-task">
+                    <input id="task-input" type="text" placeholder="Enter task">
+                    <img id="task-difficulty" src="assets/easy.png">
+                    <div id="submit-task"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab" id="stats">
+            <div class="title">
+                <h1>Stats</h1>
+            </div>
+            <h2 class="notice">Coming soon!</h2>
+        </div>
+
+        <div class="tab" id="settings">
+            <div class="title">
+                <h1>Settings</h1>
+                <div id="form">
+                    <label for="creatureName">Name:</label>
+                    <input id="creatureName" type="text" style="width: 150px">
+                    <br>
+                    <label for="timerLength">Focus timer length (minutes):</label>
+                    <input id="timerLength" type="number" style="width: 60px">
+                    <br>
+                    <label for="blacklist">Website blacklist:<br><em>(Comma separated, e.g. example.com, website.com)</em></label>
+                    <br>
+                    <textarea id="blacklist"></textarea>
+                    <br>
+                    <br>
+                    <input type="submit" id="settings-submit" value="Save">
+                </div>
+            </div>
+        </div>
+
+        <div class="menu">
+            <div class="menu-item selected" id="menu-pet">
+                <img src="assets/pet.png" class="menu-image" draggable="false">
+            </div>
+            <div class="menu-item" id="menu-tasks">
+                <img src="assets/tasks.png" class="menu-image" draggable="false">
+            </div>
+            <div class="menu-item" id="menu-stats">
+                <img src="assets/stats.png" class="menu-image" draggable="false">
+            </div>
+            <div class="menu-item" id="menu-settings">
+                <img src="assets/settings.png" class="menu-image" draggable="false">
+            </div>
+        </div>
+
+        <script src="popup.js"></script>
+    </body>
+</html>
