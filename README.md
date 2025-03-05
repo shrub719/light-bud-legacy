@@ -1,5 +1,5 @@
 # Light Bud
-Productivity pet that lives in your browser.
+Productivity pet that lives in your browser. This project is currently undergoing a rewrite [here](https://github.com/shrub719/light-bud).
 
 ## Installation
 
